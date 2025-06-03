@@ -38,7 +38,7 @@ jobs:
           command: npm run allure:report
       - store_artifacts:
           path: allure-report
-          destination: CypressReport
+          destination: allure-report
 
 
 workflows:
