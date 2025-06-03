@@ -217,7 +217,7 @@ describe('Get goal', () => {
         const originalDescription = response.body.goal.description;
 
         cy.sendInvalidTokenRequest(`goal/${goalId}`, 'PUT', {
-          description: 'New description'
+          description: 'New Description'
         }).then((invalidUpdateResp) => {
           expect(invalidUpdateResp.status).to.eql(401);
 
